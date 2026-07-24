@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import {Link} from "react-router-dom";
 
 const Hero = () =>{
   return (
@@ -11,18 +12,18 @@ const Hero = () =>{
         track your income and expenses to achieve your financial goals.
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-3">
-        <a
-          href="/Signup"
+        <Link
+          to="/Signup"
           className="bg-violet-600 hover:bg-violet-700 text-white rounded-lg px-6 py-3 text-sm font-semibold transition-colors"
         >
           Start Tracking for Free
-        </a>
-        <a
-          href="/learn"
+        </Link>
+        <Link
+          to="/learn"
           className="bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg px-5 py-3 text-sm font-semibold inline-flex items-center justify-center gap-1.5 transition-colors"
         >
           Learn More <ArrowRight size={16} />
-        </a>
+        </Link>
       </div>
     </section>
   );

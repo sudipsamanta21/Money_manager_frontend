@@ -1,6 +1,7 @@
 import  { useState } from "react";
 import { Menu, X } from "lucide-react";
 import {assets} from "../assets/assets.js";
+import {Link} from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -70,15 +71,17 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="#login" className="text-gray-900 text-sm font-medium py-1">
+          <Link
+              to="/login"
+              className="text-gray-900 text-sm font-medium py-1">
             Login
-          </a>
-          <a
-            href="#get-started"
+          </Link>
+          <Link
+            to="/Signup"
             className="bg-violet-600 text-white rounded-lg px-5 py-2.5 text-sm font-semibold text-center"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       )}
     </header>

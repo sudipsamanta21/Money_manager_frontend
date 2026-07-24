@@ -6,7 +6,7 @@ import Stats from "../components/Stats";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import LearnMore from "./LearnMore.jsx";
+
 
 const HomeLanding=() => {
     return (
@@ -19,7 +19,6 @@ const HomeLanding=() => {
             <FAQ />
             <Contact />
             <Footer />
-            <LearnMore/>
         </div>
     );
 }
