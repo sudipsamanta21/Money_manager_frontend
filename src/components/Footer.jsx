@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom";
 import { PiggyBank, Globe, MessageCircle, Link2, Users } from "lucide-react";
 
 const FOOTER_LINKS = [
@@ -22,7 +22,11 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <PiggyBank size={22} color="#F5B324" fill="#FDE68A" strokeWidth={1.8} />
+            <img
+                src={assets.logo}
+                alt="Money Manager"
+                className="w-10 h-10 rounded-full border-4 border-fuchsia-100 object-contain bg-white "
+            />
             <span className="font-bold text-white text-base">Money Manager</span>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed mb-5">
