@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 px-6 pt-16 pb-8">
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
         <div>
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 ">
             <img
                 src={assets.logo}
                 alt="Money Manager"
