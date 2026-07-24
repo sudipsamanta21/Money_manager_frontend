@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {assets} from "../assets/assets.js";
 import { Globe, MessageCircle, Link2, Users } from "lucide-react";
 
 const FOOTER_LINKS = [
