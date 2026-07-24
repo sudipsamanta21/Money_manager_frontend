@@ -39,15 +39,15 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <a href="/login" className="text-gray-900 text-sm font-medium hover:text-violet-600">
+          <Link to="/login" className="text-gray-900 text-sm font-medium hover:text-violet-600">
             Login
-          </a>
-          <a
-            href="/Signup"
+          </Link>
+          <Link
+            to="/Signup"
             className="bg-violet-600 hover:bg-violet-700 text-white rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         <button
