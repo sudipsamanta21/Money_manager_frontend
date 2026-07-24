@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import { PiggyBank, Globe, MessageCircle, Link2, Users } from "lucide-react";
+import { Globe, MessageCircle, Link2, Users } from "lucide-react";
 
 const FOOTER_LINKS = [
   {
