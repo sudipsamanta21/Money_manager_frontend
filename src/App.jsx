@@ -9,6 +9,8 @@ import Filter from "./pages/Filter.jsx";
 import {Toaster} from "react-hot-toast";
 import About from "./pages/About.jsx";
 import Developer from "./pages/Developer.jsx";
+import HomeLanding from "./pages/HomeLanding.jsx";
+import LearnMore from "./pages/LearnMore.jsx";
 
 
 
@@ -19,6 +21,8 @@ const App =() =>{
           <BrowserRouter>
               <Routes>
                   <Route path="/"  element={<Root />} />
+                  <Route path="/home" element={<HomeLanding />}/>
+                  <Route path="/learn" element={<LearnMore />}/>
                   <Route path="/login" element={<Login />}/>
                   <Route path="/signup" element={<Signup />}/>
                   <Route path="/dashboard" element={<Home />}/>
@@ -35,14 +39,14 @@ const App =() =>{
       </>
   )
 }
+
 const Root = () =>{
     const isAuthenticated  = !! localStorage.getItem("token");
     return isAuthenticated ? (
-        < Navigate to="/dashboard"/>
+        < Navigate to="/home"/>
     ) : (
-       <Navigate to="/login"/>
+        <Navigate to="/home"/>
     );
 }
-
 
 export default App;

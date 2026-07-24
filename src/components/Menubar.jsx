@@ -52,7 +52,12 @@ const Menubar = ({activeMenu}) =>{
                     )}
                 </button>
                 <div className="flex items-center gap-2">
-                    <img src={assets.logo} alt="logo" className="h-10 w-10" />
+                    {/*<img src={assets.logo} alt="logo" className="h-10 w-10" />*/}
+                    <img
+                        src={assets.logo}
+                        alt="Money Manager"
+                        className="w-10 h-10 rounded-full shadow-lg border-4 border-fuchsia-100 object-contain bg-white"
+                    />
                     <span className="text-lg font-medium text-block truncate">
                         Money Manager
                     </span>

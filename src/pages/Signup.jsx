@@ -93,7 +93,7 @@ const Signup = () => {
                         <img
                             src={assets.logo}
                             alt="Money Manager"
-                            className="w-16 h-16 object-contain mb-1"
+                            className="w-16 h-16 object-contain mb-1 rounded-full"
                         />
 
                         <h2 className="text-xl font-bold text-fuchsia-800">

@@ -82,7 +82,7 @@ const Login = () => {
                         <img
                             src={assets.logo}
                             alt="Money Manager"
-                            className="w-20 h-20 rounded-full shadow-lg border-4 border-fuchsia-100 object-contain bg-white p-2"
+                            className="w-20 h-20 rounded-full shadow-lg border-4 border-fuchsia-100 object-contain bg-white"
                         />
 
                         <h2 className="mt-3 text-2xl font-bold text-fuchsia-800">
